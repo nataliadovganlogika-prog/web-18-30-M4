@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання | Good Fast Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Good Fast Food</div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Головна</a>
+            <a href="#">Меню</a>
+            <a href="#">Галерея</a>
+            <a href="booking.html" class="active">Бронювання</a>
+        </nav>
+    </header>
+    <section class="parallax booking-section">
+        <div class="booking-form-container">
+            <h2>Забронювати столик</h2>
+            <p class="form-description">Запрошуємо спробувати скуштувати наш новий бургер</p>
+            <form action="#" method="POST" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Ваше повне ім'я</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group-half">
+                        <label for="date">Дата бронюваня</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group form-group-half">
+                        <label for="time">Бажаний час</label>
+                        <input type="time" id="time" name="time" min="09:00" max="22:00" required>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-full" aria-required="false">Підтвердити бронювання</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>2026 Good Fast Food.</p>
+    </footer>
+</body>
+</html>
